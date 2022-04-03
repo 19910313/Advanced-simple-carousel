@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Two stage carousel | Advanced CSS Selectors</title>
+    <style>
+      body {
+        background-color: #234;
+      }
+      img {
+        margin: 0 -1.7px;
+      }
+      a {
+        margin: 0 20px 0 20px;
+      }
+      span:hover {
+        color: green;
+      }
+      .carousel {
+        width: 840px;
+        /* border: 5px solid green; */
+        /* center a block horizontaly */
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        box-shadow: 0 0 10px 2px #111;
+      }
+      .carousel .slide {
+        width: 2700px;
+        /* border: 3px solid red; */
+        transition: 1s;
+      }
+      .carousel .controls {
+        text-align: center;
+        padding: 15px;
+        /* margin: 15px; */
+      }
+      .carousel .controls a {
+        color: white;
+        text-decoration: none;
+      }
+      .carousel #left:target .slide {
+        transform: translateX(0);
+      }
+      .carousel #center:target .slide {
+        transform: translateX(-840px);
+      }
+      .carousel #right:target .slide {
+        transform: translateX(-1680px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div id="left">
+        <div id="center">
+          <div id="right">
+            <div class="slide">
+              <img
+                src="https://i.picsum.photos/id/772/280/400.jpg?hmac=UqO9m2Oa1VwbnHb2_4Irh95Ly1159wKXxc_L1BI1xRM"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/172/280/400.jpg?hmac=lULAf2om700gbi3aUFC8aUTUkBD8khgWmZ81fLYmXgM"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/167/280/400.jpg?hmac=KT_-OtH-1Ag9ep9FB2nsjJ0Uhm8z-n_l19ZbhssT3Ak"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/244/280/400.jpg?hmac=3Ns24DA0kXjNZLmP8JYroB4K8YESkQC-OUfDo3l0h4Y"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/425/280/400.jpg?hmac=VvO2WoD7Sgeqt5WiG_wBO1CXJDO73qTUtzSjrHnscgI"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/461/280/400.jpg?hmac=I6qo75tyIwTIYIVaOhTsAYW_VN0MVIBPAb5nJ379Nvo"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/29/280/400.jpg?hmac=iWXoV0TbE2nJUU0-5CJGeGzz_F7MafLTjq6d4G7fHKQ"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/583/280/400.jpg?hmac=4XYt8zTWNwmmvCghHhRqK45Z0CChl97Nj-1r2e-AZX4"
+                alt=""
+              />
+              <img
+                src="https://i.picsum.photos/id/1073/280/400.jpg?hmac=enaYwBO_q1ADOSz0-rN9WRIpFMbbCgpZtT-x0Z3gMRo"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <a href="#left"> <span>⇐</span></a>
+        <a href="#center"> <span>⇔</span></a>
+        <a href="#right"> <span>⇒</span></a>
+      </div>
+    </div>
+  </body>
+</html>
